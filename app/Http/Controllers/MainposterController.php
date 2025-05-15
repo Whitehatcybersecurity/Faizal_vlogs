@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Mainposter;
 use Illuminate\Http\Request;
+use App\Traits\common;
 
 class MainposterController extends Controller
 {
 
+    use Common;
     public function mainposterStore(Request $request){
 
         $request->validate(
