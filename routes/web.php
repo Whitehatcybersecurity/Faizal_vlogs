@@ -6,5 +6,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [App\Http\Controllers\HomeController::class, 'homePage'])->name('home');
-Route::get('/adminLogin', [App\Http\Controllers\AdminController::class, 'adminPage'])->name('admin');
-Route::get('/adminLogin', [App\Http\Controllers\AdminController::class, 'adminPage'])->name('admin');
+Route::get('/home', [App\Http\Controllers\AdminController::class, 'adminHomePage'])->name('adminhome');
+Route::post('/poster/store', [App\Http\Controllers\MainposterController::class, 'mainposterStore'])->name('mainposterstore');

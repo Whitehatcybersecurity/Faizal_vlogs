@@ -8,15 +8,6 @@
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                     <h4 class="mb-sm-0">Admin Page</h4>
-
-                    <!-- <div class="page-title-right">
-                        <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a>
-                            </li>
-                            <li class="breadcrumb-item active">Job Dashboard</li>
-                        </ol>
-                    </div> -->
-
                 </div>
             </div>
         </div>
@@ -29,68 +20,26 @@
                         </div><!-- end card header -->
                         <div class="card-body">
                             <div class="live-preview">
-                                <form action="" name="brand" enctype="multipart/form-data" 
+                                <form action="/poster/store" name="poster" enctype="multipart/form-data" 
                                         method="POST">
                                         @csrf
-                                        <input type="hidden" name="hdBrandId" id="hdBrandId">
-                                        <input type="hidden" name="hdBrandImage" id="hdBrandImage">
+                                        <input type="hidden" name="hdMainposterId" id="hdMainposterId">
+                                        <input type="hidden" name="hdMainposterImage" id="hdMainposterImage">
                                     <div class="row gy-4">
-                                        <!-- <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="basiInput" class="form-label">Destination Name</label>
-                                                <input type="text" class="form-control" name="txtBrandName"
-                                                    placeholder="Destination name" id="txtBrandName" required>
-                                            </div>
-                                            <span class="error"></span>
-                                        </div> -->
-                                        <!--end col-->
-                                        <!-- <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="basiInput" class="form-label">Destination Vlog</label>
-                                                <textarea class="form-control" name="txtBrandName"
-                                                    placeholder="Destination vlog" id="txtBrandName" rows="4" required></textarea>        
-                                            </div>
-                                            <span class="error"></span>
-                                        </div> -->
-                                        <!--end col-->
                                         <div class="col-xxl-3 col-md-6">
                                             <div>
                                                 <label for="basiInput" class="form-label">Main Poster Tittle</label>
-                                                <textarea class="form-control" name="txtBrandName"
-                                                    placeholder="main poster tittle" id="txtBrandName" rows="4" required></textarea>        
+                                                <textarea class="form-control" name="txtMainposterName"
+                                                    placeholder="main poster tittle" id="txtMainposterName" rows="4" required></textarea>        
                                             </div>
                                             <span class="error"></span>
                                         </div>
                                         <!--end col-->
-                                        <!-- <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="labelInput" class="form-label">Destination Image</label>
-                                                <input type="file" class="form-control" name="fileBrandImage"
-                                                    id="fileBrandImage">
-                                            </div>
-                                            <div class="img mt-2">
-                                                <img src="{{ asset('assets/back_end/images/no-image.jpg') }}" id="previewImage" width="100"
-                                                    height="100">
-                                            </div>
-                                        </div> -->
-                                        <!--end col-->
-                                        <!-- <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="labelInput" class="form-label">Vlog Image</label>
-                                                <input type="file" class="form-control" name="fileBrandImage"
-                                                    id="fileBrandImage">
-                                            </div>
-                                            <div class="img mt-2">
-                                                <img src="{{ asset('assets/back_end/images/no-image.jpg') }}" id="previewImage" width="100"
-                                                    height="100">
-                                            </div>
-                                        </div> -->
-                                        <!--end col-->
                                         <div class="col-xxl-3 col-md-6">
                                             <div>
                                                 <label for="labelInput" class="form-label">Main Poster Image</label>
-                                                <input type="file" class="form-control" name="fileBrandImage"
-                                                    id="fileBrandImage">
+                                                <input type="file" class="form-control" name="fileMainposterImage"
+                                                    id="fileMainposterImage">
                                             </div>
                                             <div class="img mt-2">
                                                 <img src="{{ asset('assets/back_end/images/no-image.jpg') }}" id="previewImage" width="100"
@@ -103,9 +52,7 @@
                                                 class="btn btn-success waves-effect waves-light">Add</button>
                                         </div>
                                         <!--end col-->
-
                                     </div>
-                                    
                                     <!--end row-->
                                 </form>
                             </div>
