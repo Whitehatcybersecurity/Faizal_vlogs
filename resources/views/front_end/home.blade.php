@@ -43,7 +43,7 @@
         <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/frond_end/img/logo.svg" height="34" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+            {{-- <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Service</a></li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Destination</a></li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Booking</a></li>
@@ -56,7 +56,7 @@
                   <li><a class="dropdown-item" href="#!">BN</a></li>
                 </ul>
               </li>
-            </ul>
+            </ul> --}}
           </div>
         </div>
       </nav>
@@ -67,13 +67,15 @@
 
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img" src="assets/frond_end/img/hero/hero-img.png" alt="hero-header" /></div>
+            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img" src="{{ asset($mainposters->mainposter_image)}}" alt="hero-header" /></div>
             <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-              <h4 class="fw-bold text-danger mb-3">Best Destinations around the world</h4>
-              <h1 class="hero-title">Travel, enjoy and live a new and full life</h1>
-              <p class="mb-4 fw-medium">Built Wicket longer admire do barton vanity itself do in it.<br class="d-none d-xl-block" />Preferred to sportsmen it engrossed listening. Park gate<br class="d-none d-xl-block" />sell they west hard for the.</p>
-              <div class="text-center text-md-start"> <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!" role="button">Find out more</a>
-                <div class="w-100 d-block d-md-none"></div><a href="#!" role="button" data-bs-toggle="modal" data-bs-target="#popupVideo"><span class="btn btn-danger round-btn-lg rounded-circle me-3 danger-btn-shadow"> <img src="assets/frond_end/img/hero/play.svg" width="15" alt="paly"/></span></a><span class="fw-medium">Play Demo</span>
+              {{-- <h4 class="fw-bold text-danger mb-3">Best Destinations around the world</h4> --}}
+              <h1 class="hero-title">{{ $mainposters->mainposter_tittle }}</h1>
+              {{-- <p class="mb-4 fw-medium">Built Wicket longer admire do barton vanity itself do in it.<br class="d-none d-xl-block" />Preferred to sportsmen it engrossed listening. Park gate<br class="d-none d-xl-block" />sell they west hard for the.</p> --}}
+              <div class="text-center text-md-start"> 
+                {{-- <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!" role="button">Find out more</a> --}}
+                <div class="w-100 d-block d-md-none"></div>
+                {{-- <a href="#!" role="button" data-bs-toggle="modal" data-bs-target="#popupVideo"><span class="btn btn-danger round-btn-lg rounded-circle me-3 danger-btn-shadow"> <img src="{{ asset($mainposters->mainposter_image)}}" width="15" alt="paly"/></span></a><span class="fw-medium">Play Demo</span> --}}
                 <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
@@ -92,7 +94,7 @@
       <!-- <section> begin ============================-->
       <section class="pt-5 pt-md-9" id="service">
 
-        <div class="container">
+        {{-- <div class="container">
           <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="assets/frond_end/img/category/shape.svg" style="max-width: 200px" alt="service" /></div>
           <div class="mb-7 text-center">
             <h5 class="text-secondary">CATEGORY </h5>
@@ -132,7 +134,8 @@
               </div>
             </div>
           </div>
-        </div><!-- end of .container-->
+        </div> --}}
+        <!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
@@ -148,7 +151,7 @@
         <div class="container">
           <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img src="assets/frond_end/img/dest/shape.svg" alt="destination" /></div>
           <div class="mb-7 text-center">
-            <h5 class="text-secondary">Top Selling </h5>
+            {{-- <h5 class="text-secondary">Top Selling </h5> --}}
             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Top Destinations</h3>
           </div>
           <div class="row">

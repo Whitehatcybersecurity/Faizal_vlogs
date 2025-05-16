@@ -35,6 +35,9 @@
     <!--Toastr CSS -->
     <link rel="stylesheet" href="{{ asset('assets/back_end/js/toastr/toastr.css') }}" />
 
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
    
 
 </head>
@@ -172,8 +175,8 @@
     <!---- Jquery Validation ---->
     <script src="{{ asset('assets/back_end/js/jquery/jquery.validate.min.js') }}"></script>
 
-    <!---- Toasitfy Js ---->
-    <script src="{{ asset('assets/back_end/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+    {{-- <!---- Toasitfy Js ---->
+    <script src="{{ asset('assets/back_end/libs/sweetalert2/sweetalert2.min.js') }}"></script> --}}
 
     
     <!-- common JS-->
@@ -228,6 +231,12 @@
      
 
     <script src="{{ asset('assets/back_end/back_end/js/backend/dashboard.js') }}"></script>
+
+    <!-- jQuery (Toastr depends on jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     @yield('footer')
 </body>
 
