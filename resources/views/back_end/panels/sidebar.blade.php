@@ -4,19 +4,19 @@
         <!-- Dark Logo-->
         <a href="index.html" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="assets/back_end/images/logo-sm.png" alt="" height="22">
+                <img src="assets/images/logo-sm.png" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <img src="assets/back_end/images/logo-dark.png" alt="" height="17">
+                <img src="assets/images/logo-dark.png" alt="" height="17">
             </span>
         </a>
         <!-- Light Logo-->
         <a href="index.html" class="logo logo-light">
             <span class="logo-sm">
-                <img src="assets/back_end/images/logo-sm.png" alt="" height="22">
+                <img src="assets/images/logo-sm.png" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <img src="assets/back_end/images/logo-light.png" alt="" height="17">
+                <img src="assets/images/logo-light.png" alt="" height="17">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -32,15 +32,15 @@
             </div>
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Main Poster</span>
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarDashboards">
-                        {{-- <ul class="nav nav-sm flex-column">
+                        <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="dashboard-analytics.html" class="nav-link" data-key="t-analytics">
+                                <a href="{{ route('destination') }}" class="nav-link" data-key="t-analytics">
                                     Analytics </a>
                             </li>
                             <li class="nav-item">
@@ -65,23 +65,24 @@
                                         data-key="t-job">Job</span> <span class="badge badge-pill bg-success"
                                         data-key="t-new">New</span></a>
                             </li>
-                        </ul> --}}
+                        </ul>
                     </div>
-                </li> <!-- end Dashboard Menu -->
+                </li>  --}}
+                <!-- end Dashboard Menu -->
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarMasters" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarApps">
-                        <i class="ri-apps-2-line"></i> <span data-key="">Destination</span>
+                        <i class="ri-apps-2-line"></i> <span data-key="">Main Poster</span>
                     </a>
-                    <!-- <div class="collapse menu-dropdown" id="sidebarMasters">
+                    <div class="collapse menu-dropdown" id="sidebarMasters">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="" class="nav-link" data-key=""> Category
+                                <a href="{{ route('destination') }}" class="nav-link" data-key=""> Destination
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="" class="nav-link" data-key=""> Brand </a>
-                            </li>
+                            </li> --}}
                             {{-- <li class="nav-item">
                                 <a href="#sidebarEmail" class="nav-link" data-bs-toggle="collapse"
                                     role="button" aria-expanded="false" aria-controls="sidebarEmail"
@@ -471,9 +472,9 @@
                                         class="badge badge-pill bg-success" data-key="t-new">New</span></a>
                             </li> --}}
                         </ul>
-                    </div> -->
+                    </div>
                 </li>
-                <!-- <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarProducts" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarApps">
                         <i class="ri-layout-3-line"></i> <span data-key="">Products</span>
@@ -489,8 +490,8 @@
                             </li>
                         </ul>
                     </div>
-                </li> -->
-                <!-- <li class="nav-item">
+                </li> --}}
+                {{-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarOrders" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarApps">
                         <i class="ri-account-circle-line"></i> <span data-key="">Orders</span>
@@ -512,8 +513,8 @@
                             </li>
                         </ul>
                     </div>
-                </li> -->
-                <!-- <li class="nav-item">
+                </li> --}}
+                {{-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarCustomers" data-bs-toggle="collapse"
                         role="button" aria-expanded="false" aria-controls="sidebarApps">
                         <i class="ri-account-circle-line"></i> <span data-key="">Customers</span>
@@ -526,7 +527,7 @@
                             </li>
                         </ul>
                     </div>
-                </li> -->
+                </li> --}}
 
                 {{-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse"

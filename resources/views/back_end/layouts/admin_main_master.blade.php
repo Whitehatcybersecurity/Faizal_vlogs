@@ -153,7 +153,7 @@
     <script src="{{ asset('assets/back_end/js/plugins.js') }}"></script>
 
     <!-- apexcharts -->
-    <script src="{{ asset('back_end/libs/apexcharts/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('assets/back_end/libs/apexcharts/apexcharts.min.js') }}"></script>
 
     <!-- Vector map-->
     <script src="{{ asset('assets/back_end/libs/jsvectormap/js/jsvectormap.min.js') }}"></script>
@@ -230,7 +230,7 @@
 
      
 
-    <script src="{{ asset('assets/back_end/back_end/js/backend/dashboard.js') }}"></script>
+    <script src="{{ asset('assets/back_end/js/backend/dashboard.js') }}"></script>
 
     <!-- jQuery (Toastr depends on jQuery) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
