@@ -12,3 +12,4 @@ Route::post('/poster/store', [App\Http\Controllers\MainposterController::class, 
 //destination  
 Route::get('/destinationView', [App\Http\Controllers\DestinationController::class, 'destinationView'])->name('destination');
 Route::post('/destination/store', [App\Http\Controllers\DestinationController::class, 'destinationStore'])->name('destinationstore');
+Route::get('/getdestinationdata', [App\Http\Controllers\DestinationController::class, 'getDestinationData'])->name('destinationdata');

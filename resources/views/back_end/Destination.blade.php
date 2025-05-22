@@ -2,7 +2,6 @@
 @section('content')
 <div class="page-content">
     <div class="container-fluid">
-
         <!-- start page title -->
         <div class="row">
             <div class="col-12">
@@ -20,7 +19,7 @@
                         </div><!-- end card header -->
                         <div class="card-body">
                             <div class="live-preview">
-                                <form action="" name="destination" enctype="multipart/form-data" 
+                                <form action="/destination/store" name="destination" enctype="multipart/form-data" 
                                         method="POST">
                                         @csrf
                                         <input type="hidden" name="hdDestinationId" id="hdDestinationId">
@@ -61,9 +60,7 @@
                                                 class="btn btn-success waves-effect waves-light">Add</button>
                                         </div>
                                         <!--end col-->
-
                                     </div>
-                                    
                                     <!--end row-->
                                 </form>
                             </div>
@@ -80,7 +77,7 @@
                         </div><!-- end card header -->
                         <div class="card-body">
                             <div class="card-datatable table-responsive pt-0">
-                                <table id="tblDestination" class="table">
+                                <table id="tblDestination" name="tblDestination" class="table">
                                     <thead class="border-bottom">
                                         <tr>
                                             <th>S.No</th>

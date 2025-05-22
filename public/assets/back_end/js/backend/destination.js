@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    $("#tblDestination").DataTable({
+    $("#tblDestination").DataTable({ 
         processing: true,
         serverSide: true,
         order: [[0, "ASC"]],
